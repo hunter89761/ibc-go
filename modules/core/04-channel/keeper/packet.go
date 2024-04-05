@@ -275,6 +275,7 @@ func (k Keeper) RecvPacket(
 		"src_channel", packet.GetSourceChannel(),
 		"dst_port", packet.GetDestPort(),
 		"dst_channel", packet.GetDestChannel(),
+		"wb_test", string(packet.GetData()),
 	)
 
 	// emit an event that the relayer can query for
